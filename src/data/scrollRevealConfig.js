@@ -64,4 +64,18 @@ export const targetElements = [
       origin: "bottom",
     },
   },
+  {
+    element: ".skill",
+    animation: {
+      delay: 800,
+      origin: "bottom",
+    },
+  },
+  {
+    element: ".certificates",
+    animation: {
+      delay: 800,
+      origin: "bottom",
+    },
+  },
 ];
