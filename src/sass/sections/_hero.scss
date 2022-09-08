@@ -16,6 +16,7 @@
   z-index: -1;
   background-image: url(./assets/leone-venter.jpg);
   background-size: cover;
+  background-attachment: fixed;
 
   // Set position sticky so the jumbotron stays fixed while you scroll.
   // position: sticky;
@@ -28,6 +29,9 @@
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
+    //background-attachment: scroll;
+    background-image: url(./assets/UMS7T43.jpg);
+    background-position: center;
   }
 
   .hero-title {
