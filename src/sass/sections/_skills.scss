@@ -4,8 +4,18 @@
 
 
 .skills img {
-    width: 250px;
+    width: 25rem;
     padding: 15px 20px 30px 20px;
+
+    @include respond(tab-land) {
+        width: 13rem;
+        padding: 15px 10px 30px 10px;
+    }
+
+    @include respond(phone) {
+        width: 15rem;
+        padding: 15px 8px 30px 8px;
+    }
 
 }
 
@@ -14,5 +24,5 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     transition: all 0.2s ease-out;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-    
+
 }

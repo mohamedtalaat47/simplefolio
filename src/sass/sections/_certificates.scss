@@ -1,15 +1,35 @@
-.carousel-inner {
-    box-shadow: 16px 17px 12px -5px rgba(0, 0, 0, 0.65);
-    -webkit-box-shadow: 16px 17px 12px -5px rgba(0, 0, 0, 0.65);
-    -moz-box-shadow: 16px 17px 12px -5px rgba(0, 0, 0, 0.65);
-    margin-bottom: 200px;
-}
+#certificates {
+    background-image: linear-gradient(135deg,
+            $primary-color 0%,
+            $secondary-color 100%);
+    -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+    padding: 15rem 0 10rem 0;
+    margin-top: -10rem;
+    margin-bottom: -1px;
+    color: $white-color;
 
-.carousel-item img {
-    border-radius: 10px;
-}
+    @include respond(tab-land) {
+        padding: 10rem 0;
+        clip-path: none;
+        margin-top: 0;
+        -webkit-clip-path: none;
+    }
 
-.carousel-control-next-icon , .carousel-control-prev-icon{
-    background-color: rgba(0, 0, 0, 0.295);
-    border-radius: 50%;
+    .carousel-inner {
+        box-shadow: 16px 17px 12px -5px rgba(0, 0, 0, 0.65);
+        -webkit-box-shadow: 16px 17px 12px -5px rgba(0, 0, 0, 0.65);
+        -moz-box-shadow: 16px 17px 12px -5px rgba(0, 0, 0, 0.65);
+        margin-bottom: 200px;
+    }
+
+    .carousel-item img {
+        border-radius: 10px;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        background-color: rgba(0, 0, 0, 0.295);
+        border-radius: 50%;
+    }
 }
