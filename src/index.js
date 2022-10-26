@@ -5,18 +5,7 @@ import { targetElements, defaultProps } from "./data/scrollRevealConfig";
 initScrollReveal(targetElements, defaultProps);
 initTiltEffect();
 
-
-const myPreloader = document.querySelector('.preloader');
-
-const fadeOutEffect = setInterval(() => {
-    if (!myPreloader.style.opacity) {
-        myPreloader.style.opacity = 1;
-    }
-    if (myPreloader.style.opacity > 0) {
-        myPreloader.style.opacity -= 0.1;
-    } else {
-        clearInterval(fadeEffect);
-    }
-}, 300);
-
-window.addEventListener('load', fadeOutEffect);
+window.onload = function(){
+    //hide the preloader
+    document.querySelector(".preloader").style.display = "none";
+}
